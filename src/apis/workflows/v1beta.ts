@@ -297,7 +297,7 @@ export namespace workflows_v1beta {
      */
     serviceAccount?: string | null;
     /**
-     * Workflow code to be executed. The size limit is 32KB.
+     * Workflow code to be executed. The size limit is 128KB.
      */
     sourceContents?: string | null;
     /**
