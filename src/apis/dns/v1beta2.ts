@@ -1366,7 +1366,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Fetch the representation of an existing DnsKey.
+     * Fetches the representation of an existing DnsKey.
      * @example
      * ```js
      * // Before running the sample:
@@ -1517,7 +1517,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Enumerate DnsKeys to a ResourceRecordSet collection.
+     * Enumerates DnsKeys to a ResourceRecordSet collection.
      * @example
      * ```js
      * // Before running the sample:
@@ -2067,7 +2067,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Create a new ManagedZone.
+     * Creates a new ManagedZone.
      * @example
      * ```js
      * // Before running the sample:
@@ -2238,7 +2238,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Delete a previously created ManagedZone.
+     * Deletes a previously created ManagedZone.
      * @example
      * ```js
      * // Before running the sample:
@@ -2367,7 +2367,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Fetch the representation of an existing ManagedZone.
+     * Fetches the representation of an existing ManagedZone.
      * @example
      * ```js
      * // Before running the sample:
@@ -2519,7 +2519,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Enumerate ManagedZones that have been created but not yet deleted.
+     * Enumerates ManagedZones that have been created but not yet deleted.
      * @example
      * ```js
      * // Before running the sample:
@@ -2666,7 +2666,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Apply a partial update to an existing ManagedZone.
+     * Applies a partial update to an existing ManagedZone.
      * @example
      * ```js
      * // Before running the sample:
@@ -2832,7 +2832,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Update an existing ManagedZone.
+     * Updates an existing ManagedZone.
      * @example
      * ```js
      * // Before running the sample:
@@ -3680,7 +3680,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Apply a partial update to an existing Policy.
+     * Applies a partial update to an existing Policy.
      * @example
      * ```js
      * // Before running the sample:
@@ -3835,7 +3835,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Update an existing Policy.
+     * Updates an existing Policy.
      * @example
      * ```js
      * // Before running the sample:
@@ -4260,7 +4260,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Create a new ResourceRecordSet.
+     * Creates a new ResourceRecordSet.
      * @example
      * ```js
      * // Before running the sample:
@@ -4417,7 +4417,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Delete a previously created ResourceRecordSet.
+     * Deletes a previously created ResourceRecordSet.
      * @example
      * ```js
      * // Before running the sample:
@@ -4550,7 +4550,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Fetch the representation of an existing ResourceRecordSet.
+     * Fetches the representation of an existing ResourceRecordSet.
      * @example
      * ```js
      * // Before running the sample:
@@ -4700,7 +4700,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Apply a partial update to an existing ResourceRecordSet.
+     * Applies a partial update to an existing ResourceRecordSet.
      * @example
      * ```js
      * // Before running the sample:
@@ -5303,7 +5303,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Delete a previously created Response Policy. Fails if the response policy is non-empty or still being referenced by a network.
+     * Deletes a previously created Response Policy. Fails if the response policy is non-empty or still being referenced by a network.
      * @example
      * ```js
      * // Before running the sample:
@@ -5432,7 +5432,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Fetch the representation of an existing Response Policy.
+     * Fetches the representation of an existing Response Policy.
      * @example
      * ```js
      * // Before running the sample:
@@ -5574,7 +5574,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Enumerate all Response Policies associated with a project.
+     * Enumerates all Response Policies associated with a project.
      * @example
      * ```js
      * // Before running the sample:
@@ -5722,7 +5722,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Apply a partial update to an existing Response Policy.
+     * Applies a partial update to an existing Response Policy.
      * @example
      * ```js
      * // Before running the sample:
@@ -5880,7 +5880,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Update an existing Response Policy.
+     * Updates an existing Response Policy.
      * @example
      * ```js
      * // Before running the sample:
@@ -6302,7 +6302,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Delete a previously created Response Policy Rule.
+     * Deletes a previously created Response Policy Rule.
      * @example
      * ```js
      * // Before running the sample:
@@ -6433,7 +6433,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Fetch the representation of an existing Response Policy Rule.
+     * Fetches the representation of an existing Response Policy Rule.
      * @example
      * ```js
      * // Before running the sample:
@@ -6580,7 +6580,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Enumerate all Response Policy Rules associated with a project.
+     * Enumerates all Response Policy Rules associated with a project.
      * @example
      * ```js
      * // Before running the sample:
@@ -6731,7 +6731,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Apply a partial update to an existing Response Policy Rule.
+     * Applies a partial update to an existing Response Policy Rule.
      * @example
      * ```js
      * // Before running the sample:
@@ -6891,7 +6891,7 @@ export namespace dns_v1beta2 {
     }
 
     /**
-     * Update an existing Response Policy Rule.
+     * Updates an existing Response Policy Rule.
      * @example
      * ```js
      * // Before running the sample:
