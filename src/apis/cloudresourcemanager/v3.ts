@@ -354,7 +354,7 @@ export namespace cloudresourcemanager_v3 {
    */
   export interface Schema$ListTagBindingsResponse {
     /**
-     * A pagination token returned from a previous call to `ListTagBindings` that indicates from where listing should continue. This is currently not used, but the server may at any point start supplying a valid token.
+     * A pagination token returned from a previous call to `ListTagBindings` that indicates from where listing should continue.
      */
     nextPageToken?: string | null;
     /**
@@ -367,7 +367,7 @@ export namespace cloudresourcemanager_v3 {
    */
   export interface Schema$ListTagKeysResponse {
     /**
-     * A pagination token returned from a previous call to `ListTagKeys` that indicates from where listing should continue. This is currently not used, but the server may at any point start supplying a valid token.
+     * A pagination token returned from a previous call to `ListTagKeys` that indicates from where listing should continue.
      */
     nextPageToken?: string | null;
     /**
@@ -1636,7 +1636,7 @@ export namespace cloudresourcemanager_v3 {
      *
      *   // Do the magic
      *   const res = await cloudresourcemanager.tagBindings.list({
-     *     // Optional. The maximum number of TagBindings to return in the response. This is currently not used by the server and will return the full page even if a size is specified.
+     *     // Optional. The maximum number of TagBindings to return in the response. The server allows a maximum of 300 TagBindings to return. If unspecified, the server will use 100 as the default.
      *     pageSize: 'placeholder-value',
      *     // Optional. A pagination token returned from a previous call to `ListTagBindings` that indicates where this listing should continue from.
      *     pageToken: 'placeholder-value',
@@ -1767,7 +1767,7 @@ export namespace cloudresourcemanager_v3 {
   }
   export interface Params$Resource$Tagbindings$List extends StandardParameters {
     /**
-     * Optional. The maximum number of TagBindings to return in the response. This is currently not used by the server and will return the full page even if a size is specified.
+     * Optional. The maximum number of TagBindings to return in the response. The server allows a maximum of 300 TagBindings to return. If unspecified, the server will use 100 as the default.
      */
     pageSize?: number;
     /**
@@ -2375,9 +2375,9 @@ export namespace cloudresourcemanager_v3 {
      *
      *   // Do the magic
      *   const res = await cloudresourcemanager.tagKeys.list({
-     *     // Optional. The maximum number of TagKeys to return in the response. This is currently not used by the server and will return the full page even if a size is specified currently.
+     *     // Optional. The maximum number of TagKeys to return in the response. The server allows a maximum of 300 TagKeys to return. If unspecified, the server will use 100 as the default.
      *     pageSize: 'placeholder-value',
-     *     // Optional. A pagination token returned from a previous call to `ListTagKey` that indicates where this listing should continue from. This is currently not used by the server.
+     *     // Optional. A pagination token returned from a previous call to `ListTagKey` that indicates where this listing should continue from.
      *     pageToken: 'placeholder-value',
      *     // Required. The resource name of the new TagKey's parent. Must be of the form `folders/{folder_id\}` or `organizations/{org_id\}`.
      *     parent: 'placeholder-value',
@@ -2964,11 +2964,11 @@ export namespace cloudresourcemanager_v3 {
   }
   export interface Params$Resource$Tagkeys$List extends StandardParameters {
     /**
-     * Optional. The maximum number of TagKeys to return in the response. This is currently not used by the server and will return the full page even if a size is specified currently.
+     * Optional. The maximum number of TagKeys to return in the response. The server allows a maximum of 300 TagKeys to return. If unspecified, the server will use 100 as the default.
      */
     pageSize?: number;
     /**
-     * Optional. A pagination token returned from a previous call to `ListTagKey` that indicates where this listing should continue from. This is currently not used by the server.
+     * Optional. A pagination token returned from a previous call to `ListTagKey` that indicates where this listing should continue from.
      */
     pageToken?: string;
     /**
@@ -3615,9 +3615,9 @@ export namespace cloudresourcemanager_v3 {
      *
      *   // Do the magic
      *   const res = await cloudresourcemanager.tagValues.list({
-     *     // Optional. The maximum number of TagValues to return in the response. This is currently not used by the server and will return the full page even if a size is specified currently.
+     *     // Optional. The maximum number of TagValues to return in the response. The server allows a maximum of 300 TagValues to return. If unspecified, the server will use 100 as the default.
      *     pageSize: 'placeholder-value',
-     *     // Optional. A pagination token returned from a previous call to `ListTagValues` that indicates where this listing should continue from. This is currently not used by the server.
+     *     // Optional. A pagination token returned from a previous call to `ListTagValues` that indicates where this listing should continue from.
      *     pageToken: 'placeholder-value',
      *     // Required. Resource name for TagKey, parent of the TagValues to be listed, in the format `tagKeys/123`.
      *     parent: 'placeholder-value',
@@ -4206,11 +4206,11 @@ export namespace cloudresourcemanager_v3 {
   }
   export interface Params$Resource$Tagvalues$List extends StandardParameters {
     /**
-     * Optional. The maximum number of TagValues to return in the response. This is currently not used by the server and will return the full page even if a size is specified currently.
+     * Optional. The maximum number of TagValues to return in the response. The server allows a maximum of 300 TagValues to return. If unspecified, the server will use 100 as the default.
      */
     pageSize?: number;
     /**
-     * Optional. A pagination token returned from a previous call to `ListTagValues` that indicates where this listing should continue from. This is currently not used by the server.
+     * Optional. A pagination token returned from a previous call to `ListTagValues` that indicates where this listing should continue from.
      */
     pageToken?: string;
     /**
