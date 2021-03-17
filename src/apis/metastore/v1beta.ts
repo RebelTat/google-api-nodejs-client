@@ -190,6 +190,15 @@ export namespace metastore_v1beta {
     type?: string | null;
   }
   /**
+   * Specifies how metastore metadata should be integrated with the Data Catalog service.
+   */
+  export interface Schema$DataCatalogConfig {
+    /**
+     * Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.
+     */
+    enabled?: boolean | null;
+  }
+  /**
    * A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); \} The JSON representation for Empty is empty JSON object {\}.
    */
   export interface Schema$Empty {}
@@ -442,7 +451,12 @@ export namespace metastore_v1beta {
   /**
    * Specifies how metastore metadata should be integrated with external services.
    */
-  export interface Schema$MetadataIntegration {}
+  export interface Schema$MetadataIntegration {
+    /**
+     * The integration config for the Data Catalog service.
+     */
+    dataCatalogConfig?: Schema$DataCatalogConfig;
+  }
   /**
    * The metadata management activities of the metastore service.
    */
