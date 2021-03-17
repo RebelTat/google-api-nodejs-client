@@ -614,6 +614,15 @@ export namespace dataflow_v1b3 {
     projectId?: string | null;
   }
   /**
+   * Describes any options that have an effect on the debugging of pipelines.
+   */
+  export interface Schema$DebugOptions {
+    /**
+     * When true, enables the logging of the literal hot key to the user's Cloud Logging.
+     */
+    enableHotKeyLogging?: boolean | null;
+  }
+  /**
    * Response from deleting a snapshot.
    */
   export interface Schema$DeleteSnapshotResponse {}
@@ -758,6 +767,10 @@ export namespace dataflow_v1b3 {
      * The dataset for the current project where various workflow related tables are stored. The supported resource type is: Google BigQuery: bigquery.googleapis.com/{dataset\}
      */
     dataset?: string | null;
+    /**
+     * Any debugging options to be supplied to the job.
+     */
+    debugOptions?: Schema$DebugOptions;
     /**
      * The list of experiments to enable. This field should be used for SDK related experiments and not for service related experiments. The proper field for service related experiments is service_options. For more details see the rationale at go/user-specified-service-options.
      */
