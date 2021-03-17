@@ -12,6 +12,10 @@
     "package": "@google-cloud/notebooks"
   },
   {
+    "api": "apigateway",
+    "package": "@google-cloud/api-gateway"
+  },
+  {
     "api": "area120tables",
     "package": "@google/area120-tables"
   },
