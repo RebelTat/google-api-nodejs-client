@@ -145,6 +145,10 @@ export namespace analyticsdata_v1alpha {
    */
   export interface Schema$BatchRunPivotReportsResponse {
     /**
+     * Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#batchRunPivotReports". Useful to distinguish between response types in JSON.
+     */
+    kind?: string | null;
+    /**
      * Individual responses. Each response has a separate pivot report request.
      */
     pivotReports?: Schema$RunPivotReportResponse[];
@@ -166,6 +170,10 @@ export namespace analyticsdata_v1alpha {
    * The batch response containing multiple reports.
    */
   export interface Schema$BatchRunReportsResponse {
+    /**
+     * Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#batchRunReports". Useful to distinguish between response types in JSON.
+     */
+    kind?: string | null;
     /**
      * Individual responses. Each response has a separate report request.
      */
@@ -600,7 +608,7 @@ export namespace analyticsdata_v1alpha {
      */
     fieldNames?: string[] | null;
     /**
-     * The number of rows to return in this pivot. If the `limit` parameter is unspecified, up to 10,000 rows are returned. The product of the `limit` for each `pivot` in a `RunPivotReportRequest` must not exceed 100,000. For example, a two pivot request with `limit: 1000` in each pivot will fail because the product is `1,000,000`.
+     * The number of rows to return in this pivot. The `limit` parameter is required. A `limit` of 10,000 is common for single pivot requests. The product of the `limit` for each `pivot` in a `RunPivotReportRequest` must not exceed 100,000. For example, a two pivot request with `limit: 1000` in each pivot will fail because the product is `1,000,000`.
      */
     limit?: string | null;
     /**
@@ -672,6 +680,10 @@ export namespace analyticsdata_v1alpha {
      * Standard Analytics Properties can send up to 10 concurrent requests; Analytics 360 Properties can use up to 50 concurrent requests.
      */
     concurrentRequests?: Schema$QuotaStatus;
+    /**
+     * Analytics Properties can send up to 120 requests with potentially thresholded dimensions per hour. In a batch request, each report request is individually counted for this quota if the request contains potentially thresholded dimensions.
+     */
+    potentiallyThresholdedRequestsPerHour?: Schema$QuotaStatus;
     /**
      * Standard Analytics Properties and cloud project pairs can have up to 10 server errors per hour; Analytics 360 Properties and cloud project pairs can have up to 50 server errors per hour.
      */
@@ -782,6 +794,10 @@ export namespace analyticsdata_v1alpha {
      */
     dimensionHeaders?: Schema$DimensionHeader[];
     /**
+     * Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#runPivotReport". Useful to distinguish between response types in JSON.
+     */
+    kind?: string | null;
+    /**
      * Metadata for the report.
      */
     metadata?: Schema$ResponseMetaData;
@@ -848,6 +864,10 @@ export namespace analyticsdata_v1alpha {
      */
     dimensionHeaders?: Schema$DimensionHeader[];
     /**
+     * Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#runRealtimeReport". Useful to distinguish between response types in JSON.
+     */
+    kind?: string | null;
+    /**
      * If requested, the maximum values of metrics.
      */
     maximums?: Schema$Row[];
@@ -909,7 +929,7 @@ export namespace analyticsdata_v1alpha {
      */
     keepEmptyRows?: boolean | null;
     /**
-     * The number of rows to return. If the `limit` parameter is unspecified, 10,000 rows are returned. The API returns a maximum of 100,000 rows per request, no matter how many you ask for.
+     * The number of rows to return. If the `limit` parameter is unspecified, 10,000 rows are returned. The API returns a maximum of 100,000 rows per request, no matter how many you ask for. To learn more about this pagination parameter, see [Pagination](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination).
      */
     limit?: string | null;
     /**
@@ -925,7 +945,7 @@ export namespace analyticsdata_v1alpha {
      */
     metrics?: Schema$Metric[];
     /**
-     * The row count of the start row. The first row is counted as row 0.
+     * The row count of the start row. The first row is counted as row 0. To learn more about this pagination parameter, see [Pagination](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination).
      */
     offset?: string | null;
     /**
@@ -945,6 +965,10 @@ export namespace analyticsdata_v1alpha {
      * Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows.
      */
     dimensionHeaders?: Schema$DimensionHeader[];
+    /**
+     * Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#runReport". Useful to distinguish between response types in JSON.
+     */
+    kind?: string | null;
     /**
      * If requested, the maximum values of metrics.
      */
@@ -1187,6 +1211,7 @@ export namespace analyticsdata_v1alpha {
      *   // Example response
      *   // {
      *   //   "dimensionHeaders": [],
+     *   //   "kind": "my_kind",
      *   //   "maximums": [],
      *   //   "metricHeaders": [],
      *   //   "minimums": [],
@@ -1366,6 +1391,7 @@ export namespace analyticsdata_v1alpha {
      *
      *   // Example response
      *   // {
+     *   //   "kind": "my_kind",
      *   //   "pivotReports": []
      *   // }
      * }
@@ -1514,6 +1540,7 @@ export namespace analyticsdata_v1alpha {
      *
      *   // Example response
      *   // {
+     *   //   "kind": "my_kind",
      *   //   "reports": []
      *   // }
      * }
@@ -1671,6 +1698,7 @@ export namespace analyticsdata_v1alpha {
      *   // {
      *   //   "aggregates": [],
      *   //   "dimensionHeaders": [],
+     *   //   "kind": "my_kind",
      *   //   "metadata": {},
      *   //   "metricHeaders": [],
      *   //   "pivotHeaders": [],
@@ -1834,6 +1862,7 @@ export namespace analyticsdata_v1alpha {
      *   // Example response
      *   // {
      *   //   "dimensionHeaders": [],
+     *   //   "kind": "my_kind",
      *   //   "maximums": [],
      *   //   "metadata": {},
      *   //   "metricHeaders": [],
